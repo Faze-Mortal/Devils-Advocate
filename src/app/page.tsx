@@ -198,11 +198,6 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    localStorage.setItem(STORAGE_KEYS.apiKey, apiKey);
-  }, [apiKey]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
     localStorage.setItem(STORAGE_KEYS.novel, String(novelCritique));
   }, [novelCritique]);
 
